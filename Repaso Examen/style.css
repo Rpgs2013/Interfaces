@@ -1,0 +1,209 @@
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+}
+/*Reset/*/
+
+
+/*Fonts*/
+	/*Open-Sans*/
+	@font-face {
+		font-family: "Regular";
+		src: url(open-sans/OpenSans-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: "Bold";
+		src: url(open-sans/OpenSans-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "SemiBold";
+		src: url(open-sans/OpenSans-SemiBold.ttf);
+	}
+
+	@font-face {
+		font-family: "Extra";
+		src: url(open-sans/OpenSans-ExtraBold.ttf);
+	}
+	/*Open-Sans/*/
+
+	/*Rubik*/
+	@font-face {
+		font-family: "Rubik";
+		src: url(Rubik/Rubik-Regular.ttf);
+	}
+	
+	@font-face {
+		font-family: "Rubik-Bold";
+		src: url(Rubik/Rubik-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "Rubik-Medium";
+		src: url(Rubik/Rubik-Medium.ttf);
+	}
+    /*Rubik/*/
+    
+    /*Segoe UI*/
+    @font-face {
+        font-family: "Segoe UI";
+        src: url();
+    }
+    /*Segoe UI*/
+/*Fonts/*/
+
+/*FlexBox*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: flex-start;
+    }
+
+    /*Flex Childs*/
+    .flex-item:nth-child(1) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+    .flex-item:nth-child(2) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+
+    .flex-item:nth-child(3) {
+        order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    /*Flex Childs/*/
+/*FlexBox/*/
+
+/*Body*/
+body {
+    font-family: "Regular", Arial, sans-serif;
+}
+
+    /*Sticky nav*/
+	.sticky {
+	 position: sticky !important; 
+	 top:0;
+	 z-index: 100;
+	 display: fixed;
+	 overflow: hidden;
+	 background-color: #6f5ed4;
+	 box-shadow: 4px 0px 9px #666666;
+	}
+
+	.sticky a {
+	  float: left;
+	  display: table-cell;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  font-size: 17px;
+	  cursor: pointer;
+	}
+
+	.type1 > img {
+	  float: left;
+	  display: table-cell;
+	  width: 30px;
+	  margin-top: 4px;
+	  margin-left: 2px;
+	  padding: 10px 10px;
+	  position: relative;
+	}
+
+	#change-color {
+		color: white;
+	}
+
+        /*Animate border botom*/
+        .cool-link {
+            display: inline-block;
+            color: #F1F1F1;
+            text-decoration: none;
+        }
+
+        .cool-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #F1F1F1;
+            transition: width .3s;
+        }
+
+        .cool-link:hover::after {
+            width: 100%;
+            transition: width .4s;
+        }
+        /*Animate border botom/*/
+
+        /*Search bar*/
+        form#search {
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        font-size: 1px;
+        padding: 1px;
+        color: white;
+        border: 3px solid white;
+        border-radius: 100px;
+        z-index: 100;
+        }
+
+        #searchicon {
+        position: relative;
+        z-index: 100;
+        left: -25px;
+        top: 1px;
+        cursor: pointer;
+        width: 0;
+        }
+
+        #change-color::placeholder {
+            color: white;
+        }
+
+        input[name=q] {
+        font-size: 15px;
+        padding: 8px 30px;
+        background: rgba(255,255,255,0); /* fully transparant */
+        border: none;
+        outline: none;
+        z-index: 100;
+        }
+        /*Search bar/*/
+	/*Sticky nav/*/
+
+	/*Scroll bar*/
+	body::-webkit-scrollbar {
+	    width: 9px;     /* Tamaño del scroll en vertical */
+	    height: 9px;    /* Tamaño del scroll en horizontal */
+	}
+
+	/* Ponemos un color de fondo y redondeamos las esquinas del
+	thumb */
+	body::-webkit-scrollbar-thumb {
+	    background: #D2D2D2;
+	    border-radius: 4px;
+	}
+
+	/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+	body::-webkit-scrollbar-thumb:hover {
+	    background: #565656;
+	    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+    /*Scroll bar/*/
+/*Body/*/

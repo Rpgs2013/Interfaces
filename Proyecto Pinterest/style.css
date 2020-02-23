@@ -1,0 +1,490 @@
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+}
+/*Reset/*/
+
+
+/*Fonts*/
+	/*Open-Sans*/
+	@font-face {
+		font-family: "Regular";
+		src: url(open-sans/OpenSans-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: "Bold";
+		src: url(open-sans/OpenSans-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "SemiBold";
+		src: url(open-sans/OpenSans-SemiBold.ttf);
+	}
+
+	@font-face {
+		font-family: "Extra";
+		src: url(open-sans/OpenSans-ExtraBold.ttf);
+	}
+	/*Open-Sans/*/
+
+	/*Rubik*/
+	@font-face {
+		font-family: "Rubik";
+		src: url(Rubik/Rubik-Regular.ttf);
+	}
+	
+	@font-face {
+		font-family: "Rubik-Bold";
+		src: url(Rubik/Rubik-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "Rubik-Medium";
+		src: url(Rubik/Rubik-Medium.ttf);
+	}
+	/*Rubik/*/
+/*Fonts/*/
+
+/*Body*/
+body {
+	font-family: "Regular", Arial, sans-serif;
+}
+
+/*Nav*/
+.grid-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a a a b c d e";
+    box-shadow: 4px 0px 9px #666666;
+  }
+  
+  .a {
+      grid-area: a;
+      position: relative;
+    }
+    
+    #pinterest {
+        position: absolute;
+        top: 1.5%;
+        left: 1%;
+        width: 60px;
+        height: 60px;
+    }
+
+    /*Serch bar*/
+	  form#search {
+        position: relative;
+        width: 215%;
+        bottom: 80%;
+        left: 100px;
+        font-size: 1px;
+        padding: 1px;
+        color: rgb(212, 212, 212);
+        border-radius: 10px;
+        z-index: 100;
+        background-color: #eeeeee;
+      }
+  
+      #searchicon {
+        color: #8e8e8e;
+         position: relative;
+         z-index: 100;
+         left: 48%;
+         top: 1px;
+         cursor: pointer;
+         width: 0;
+      }
+  
+      #change-color::placeholder {
+          color: #8e8e8e;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 645;
+      }
+  
+      input[name=q] {
+        font-size: 15px;
+        padding: 8px 30px;
+        background: rgba(255,255,255,0); /* fully transparant */
+        border: none;
+        outline: none;
+        z-index: 100;
+      }
+      /*Serch bar/*/
+  .prueba {
+    position: relative;
+    top: 25px;
+    left: 40px;
+    font-size: 17px;
+  }
+
+  .iconos {
+    visibility: hidden;
+    cursor: pointer;
+  }
+
+  /*.prueba:hover {
+    background-color: #cacaca;
+    border-radius: 100px 100px 100px 100px;
+  }*/
+
+  #ho1:hover {
+    color: rgb(228, 125, 125);
+    cursor: pointer;
+  }
+
+  #ho2:hover {
+    color: rgb(228, 125, 125);
+    cursor: pointer;
+  }
+
+  #ho3:hover {
+    color: rgb(228, 125, 125);
+    cursor: pointer;
+  }
+
+  .b { 
+      grid-area: b;
+      font-weight: 700;
+      letter-spacing: -.2px;
+    }
+  
+  .c { 
+      grid-area: c;
+      color: #8e8e8e;
+      font-weight: 645;
+      letter-spacing: -.2px;
+    }
+  
+  .d { 
+      grid-area: d;
+      color: #8e8e8e;
+      font-weight: 645;
+      letter-spacing: -.2px;
+    }
+    
+    #palo {
+      position: relative;
+      left: 78%;
+      height: 30px;
+      width: 24px;
+      border-right: 2px solid #efefef;
+      z-index: 10000;
+    }
+  
+  .e { 
+      grid-area: e;
+    }
+
+    .pad {
+      color: #8e8e8e;
+      position: relative;
+      top: 17px;
+      left: 18px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+
+    .pad:hover {
+      color: rgb(228, 125, 125);
+      cursor: pointer;
+    }
+/*Nav/*/
+
+/*Responsive galery*/
+.maingalery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 7px;
+  justify-items: flex-start;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 42%;
+    padding: 0 9px;
+    margin-top: 3%;
+  }
+
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1315px) {
+
+    form#search {
+      position: relative;
+      width: 165%;
+      bottom: 80%;
+      left: 100px;
+      font-size: 1px;
+      padding: 1px;
+      z-index: 100;
+    }
+
+    #searchicon {
+      color: #8e8e8e;
+       position: relative;
+       z-index: 100;
+       left: 30%;
+       top: 1px;
+       cursor: pointer;
+       width: 0;
+    }
+
+    .pad {
+      position: relative;
+      top: 16px;
+      left: 25px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1251px) {
+
+    .pad {
+      position: relative;
+      top: 16px;
+      left: 25px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1137px) {
+
+    form#search {
+      position: relative;
+      width: 155%;
+      bottom: 80%;
+      left: 100px;
+      z-index: 100;
+    }
+
+    #searchicon {
+      color: #8e8e8e;
+       position: relative;
+       z-index: 100;
+       left: 28%;
+       top: 1px;
+       cursor: pointer;
+       width: 0;
+    }
+
+    .pad {
+      position: relative;
+      top: 16px;
+      left: 10px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1136px) {
+
+    form#search {
+      position: relative;
+      width: 155%;
+      bottom: 80%;
+      left: 100px;
+      z-index: 100;
+    }
+
+    .pad {
+      position: relative;
+      top: 8px;
+      left: 10px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1035px) {
+
+    form#search {
+      position: relative;
+      width: 155%;
+      bottom: 150%;
+      left: 100px;
+      z-index: 100;
+    }
+
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 911px) {
+
+    form#search {
+      position: relative;
+      width: 155%;
+      top: -180%;
+      left: 100px;
+      font-size: 1px;
+      padding: 1px;
+      z-index: 100;
+    }
+
+    .prueba {
+      position: relative;
+      top: 25px;
+      left: 100px;
+      font-size: 17px;
+    }
+
+    #palo {
+      visibility: hidden;
+    }
+
+    .pad {
+      visibility: hidden;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 762px) {
+    form#search {
+      position: relative;
+      width: 155%;
+      top: -270%;
+      left: 100px;
+      z-index: 100;
+    }
+
+    .prueba {
+      visibility: hidden;
+    }
+
+    .iconos {
+      position: relative;
+      top: 10px;
+      left: 220%;
+      display: flex;
+      visibility: visible;
+      text-align: center;
+    }
+
+    .iconos:hover {
+      color: rgb(228, 125, 125);
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 640px) {
+
+    form#search {
+      position: relative;
+      width: 105%;
+      bottom: 200%;
+      left: 100px;
+      font-size: 1px;
+      padding: 1px;
+      z-index: 100;
+    }
+
+    #searchicon {
+       position: relative;
+       z-index: 100;
+       left: -6%;
+       top: 1px;
+    }
+
+    .prueba {
+      position: relative;
+      top: 25px;
+      left: 100px;
+      font-size: 17px;
+    }
+
+
+    .form#search {
+        position: relative;
+    }
+
+    .pad {
+      position: relative;
+      top: 10px;
+      left: 18px;
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+    }
+
+    .iconos {
+      position: relative;
+      left: 120%;
+      padding: 1px;
+      text-align: center;
+    }
+  }
+
+   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+   @media screen and (max-width: 530px) {
+
+    form#search {
+      visibility: hidden;
+    }
+
+    .iconos {
+      visibility: hidden;
+    }
+
+    #pinterest {
+      position: absolute;
+      bottom: 1%;
+      left: 40%;
+      z-index: 2000;
+    }
+   }
+  /*Responsive galery/*/
+
+  	/*Scroll bar*/
+	body::-webkit-scrollbar {
+	    width: 9px;     /* Tamaño del scroll en vertical */
+	    height: 9px;    /* Tamaño del scroll en horizontal */
+	}
+
+	/* Ponemos un color de fondo y redondeamos las esquinas del
+	thumb */
+	body::-webkit-scrollbar-thumb {
+	    background: #D2D2D2;
+	    border-radius: 4px;
+	}
+
+	/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+	body::-webkit-scrollbar-thumb:hover {
+	    background: #565656;
+	    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+	/*Scroll bar/*/

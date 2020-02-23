@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(63, 63, 63);
+    padding: 2px;
+
+    cursor: url('snake_sprite_final.png'), auto;
+}
+
+canvas {
+    background-color: rgb(47, 48, 47);
+    padding: 100px;
+}
+
+
+	/*Scroll bar*/
+	body::-webkit-scrollbar {
+	    width: 9px;     /* Tamaño del scroll en vertical */
+	    height: 9px;    /* Tamaño del scroll en horizontal */
+	}
+
+	/* Ponemos un color de fondo y redondeamos las esquinas del
+	thumb */
+	body::-webkit-scrollbar-thumb {
+	    background: rgb(114, 114, 114);
+	    border-radius: 4px;
+	}
+
+	/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+	body::-webkit-scrollbar-thumb:hover {
+	    background: #565656;
+	    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+	/*Scroll bar/*/

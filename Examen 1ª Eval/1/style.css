@@ -1,0 +1,236 @@
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+}
+/*Reset/*/
+
+
+/*Fonts*/
+	/*Open-Sans*/
+	@font-face {
+		font-family: "Regular";
+		src: url(Open-Sans-woff/OpenSans-Regular.woff);
+	}
+
+	@font-face {
+		font-family: "Bold";
+		src: url(Open-Sans-woff/OpenSans-Bold.woff);
+	}
+
+	@font-face {
+		font-family: "SemiBold";
+		src: url(Open-Sans-woff/OpenSans-SemiBold.woff);
+	}
+	/*Open-Sans/*/
+
+	/*Rubik*/
+	@font-face {
+		font-family: "Rubik";
+		src: url(Rubik-woff/Rubik-Regular.woff);
+	}
+	
+	@font-face {
+		font-family: "Rubik-Bold";
+		src: url(Rubik-woff/Rubik-Bold.woff);
+	}
+
+	@font-face {
+		font-family: "Rubik-Medium";
+		src: url(Rubik-woff/Rubik-Medium.woff);
+	}
+    /*Rubik/*/
+/*Fonts/*/
+
+
+/*FlexBox*/
+.flex-container {
+    margin-top: 6%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+    /*Flex Childs*/
+    .flex-item:nth-child(1) {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+    }
+    /*Flex Childs/*/
+/*FlexBox/*/
+
+
+/*Body*/
+body {
+    /*Lo he importado pero estoy usando arial, porque se quedaba mejor*/
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+    /*colors*/
+    .color-white {
+        color: white;
+    }
+    /*colors/*/
+
+
+    /*Size*/
+    .tamanio-pequenio {
+        font-size: small;
+    }
+
+    .tamanio-muy-pequenio {
+        font-size: 12px;
+    }
+
+    .tamanio-grande {
+        font-size: 50px;
+    }
+
+    .tamanio-muy-grande {
+        font-size: 160px;
+    }
+    /*Size/*/
+
+
+    /*Position*/
+    .center {
+        text-align: center;
+    }
+    /*Position/*/
+
+
+    /*Partes*/
+        /*fly*/
+        #fly {
+
+        }
+
+        #fly::after {
+            position: relative;
+            left: -3px;
+            bottom: -5px;
+            height: 2px;
+            width: 100%;
+            background: #fff;
+            z-index: 1;
+        }
+        /*fly/*/
+
+    #Round {
+
+    }
+
+    #World {
+
+    }
+
+    #the {
+        position: absolute;
+        top: 42%;
+        left: 30%;
+    }
+
+    .position {
+        position: absolute;
+        top: 45%;
+        left: 63%;
+    }
+
+    .bold {
+        font-family: "Bold";
+    }
+
+    #flecha {
+        position: absolute;
+        top: 80%;
+        left: 48%;
+        border-radius: 200px 200px 200px 200px;
+        border: 3px solid rgb(64, 117, 233);
+    }
+    /*Partes*/
+
+
+    /*Video Background*/
+    #video_background {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;
+    }
+
+    #video_background::before {
+        content:'';
+        position: absolute;
+            top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    #video_pattern {
+        background:#fff;
+        position: fixed;
+        opacity: 0.8;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    /*Video Background/*/
+
+    /* Zoom */
+    * {
+        box-sizing: border-box;
+    }
+    
+    .view {
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3); 
+    }
+    /* Zoom/ */
+
+	/*Scroll bar*/
+	body::-webkit-scrollbar {
+	    width: 9px;     /* Tamaño del scroll en vertical */
+	    height: 9px;    /* Tamaño del scroll en horizontal */
+	}
+
+	/* Ponemos un color de fondo y redondeamos las esquinas del
+	thumb */
+	body::-webkit-scrollbar-thumb {
+	    background: #D2D2D2;
+	    border-radius: 4px;
+	}
+
+	/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+	body::-webkit-scrollbar-thumb:hover {
+	    background: #565656;
+	    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+    /*Scroll bar/*/
+/*Body/*/

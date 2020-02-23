@@ -1,0 +1,16 @@
+body {
+	background-color: #4178DD;
+}
+
+h1 {
+	color: #000000;
+	border: 1px solid;
+ 	padding: 10px;
+  	box-shadow: 5px 10px;
+  	background-color: #55BEDC;
+  	text-align: center;
+}
+
+nav {
+	color: #FFFFFF;
+}

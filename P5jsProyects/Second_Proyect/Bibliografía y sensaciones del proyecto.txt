@@ -1,0 +1,7 @@
+Para realizar esta practica he utilizado:
+
+La equación de de intersección de lineas: https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection ;
+También he utilizado el tutorial de Coding Train: https://www.youtube.com/watch?v=TOEi6T2mtHo ;
+
+En principio deseaba hacer un proyecto en el cual la esfera persiguiera al raton, y alrededor de ella orbitaran particulas de polvo espacial.
+Pero de momento he realizado esta practica para empezar, ya que me pareció muy interesante.
