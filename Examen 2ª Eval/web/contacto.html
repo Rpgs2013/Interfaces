@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contacto</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="stylesheet" href="normalize.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <div id="todo">
+            <header>
+                <div id="cabecera">
+                </div>
+            </header>
+            <h2>HÉROES DE CÓMICS</h2>
+            <nav>
+                <div id='cssmenu'>
+                <ul>
+                    <li><a href='index.html'><span>Home</span></a></li>
+                    <li class='last'><a href='api_marvel/index.html'><span>Marvel API</span></a></li>
+                    <li class='last'><a href='busqueda.html'><span>Búsqueda Marvel</span></a></li>
+                    <li class='last'><a href='contacto.html'><span>Contacto</span></a></li>
+                </ul>
+                </div>
+            </nav>
+            <div id="after_submit"></div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <label class="required" for="name">Nombre:</label><br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Email:</label><br />
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Mensaje:</label><br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+                <input id="submit_button" type="submit" value="Enviar email" />
+            </form>
+            
+            <div id="mapid" style="width:100%;height:400px;">
+            <script src="scripts/Mapa.js"></script>
+            
+            </div>
+           
+            <footer>
+                <div id="tweet">
+                    <h1>Contacto:</h1>
+                    <p>Raul Gallego Sandoval</p>
+                    <p>E-mail: <a href="#">raulgallego04@gmail.com</a></p>
+                </div>
+                <div id="redessociales">
+                    <h1>Sígueme en mis Redes Sociales!</h1>
+                    <p><img src="imagenes/vimeo.png" alt="vimeo" />
+                        <img src="imagenes/facebook.png" alt="facebook" />
+                        <img src="imagenes/flickr.png" alt="flickr" />
+                        <img src="imagenes/twitter.png" alt="twitter" />
+                        <img src="imagenes/rss.png" alt="rss" /></p>
+                </div>
+                <div id="my_friends">
+                    <h1>Artículos Relacionados</h1>
+                    <ul>
+                        <li><a href="#">Thor</a></li>
+                        <li><a href="#">Capitán América</a></li>
+                        <li><a href="#">Hulk</a></li>
+                        <li><a href="#">Spider Man</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

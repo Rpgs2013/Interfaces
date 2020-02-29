@@ -1,0 +1,2 @@
+En la carpeta "web" abrir el fichero "index.html" para
+visualizar la URL con todo.
