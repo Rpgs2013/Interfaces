@@ -1,0 +1,350 @@
+/*Reset*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  text-decoration: none;
+  box-sizing:border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*Reset/*/
+
+/*Fonts*/
+	/*Open-Sans*/
+	@font-face {
+		font-family: "Regular";
+		src: url(open-sans/OpenSans-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: "Bold";
+		src: url(open-sans/OpenSans-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "SemiBold";
+		src: url(open-sans/OpenSans-SemiBold.ttf);
+	}
+
+	@font-face {
+		font-family: "Extra";
+		src: url(open-sans/OpenSans-ExtraBold.ttf);
+	}
+	/*Open-Sans/*/
+
+
+	/*Rubik*/
+	@font-face {
+		font-family: "Rubik";
+		src: url(Rubik/Rubik-Regular.ttf);
+	}
+	
+	@font-face {
+		font-family: "Rubik-Bold";
+		src: url(Rubik/Rubik-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "Rubik-Medium";
+		src: url(Rubik/Rubik-Medium.ttf);
+	}
+	/*Rubik/*/
+/*Fonts/*/
+
+
+/*Body*/
+body {
+	font-family: "Regular", Arial, sans-serif;
+}
+
+	/*Sticky nav*/
+	.sticky {
+    position: sticky !important; 
+    top: 0;
+    z-index: 100;
+    display: fixed;
+    overflow: hidden;
+    background-color: #e7ac70;
+    box-shadow: 4px 0px 9px #666666;
+	}
+  
+  .center {
+    display:block;
+    margin:auto;
+  }
+
+  #x_image {
+    width: 150px;
+    height: 100px;
+  }
+
+	#change-color {
+		color: white;
+	}
+
+	/*Animate border botom*/
+	.cool-link {
+	    display: inline-block;
+	    color: #F1F1F1;
+	    text-decoration: none;
+	}
+
+	.cool-link::after {
+	    content: '';
+	    display: block;
+	    width: 0;
+	    height: 2px;
+	    background: #F1F1F1;
+	    transition: width .3s;
+	}
+	/*Animate border botom/*/
+/*Sticky nav/*/
+
+/*Menu Toggle*/
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+/*Menu Toggle/*/
+
+/*Images*/
+  .bg-image {
+    /* Full height */
+    height: 50%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Images used */
+  .img1 { background-image: url("../img/desert.jpg"); }
+  .img2 { background-image: url("../img/glow_mountain.jpg"); }
+  .img3 { background-image: url("../img/forest.jpg"); }
+  .img4 { background-image: url("../img/mountain.jpg"); }
+  .img5 { background-image: url("../img/green.jpg"); }
+  .img6 { background-image: url("../img/playa_atardecer.jpg"); }
+
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 780px;
+    padding: 20px;
+    text-align: center;
+  }
+/*Images/*/
+
+.ayuda {
+    float: right;
+    border-radius: 40px;
+    border: 2px solid white;
+    margin-top: 3px;
+    font-weight: bolder
+}
+
+.menu {
+     float: left;
+     border-radius: 40px;
+     border: 2px solid white;
+     margin-top: 3px;
+     font-weight: bolder
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: -15px;
+    margin-left: 32%;
+}
+
+contenido {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: aliceblue;
+    font-family: 'Trade Winds';
+    
+}
+
+canvas {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+#JSON {
+  padding: 50px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 20px 30px -10px rgba(0 ,0,0, .3);
+  border-radius: 8px;
+  padding: 30px;
+  display:inline-block;
+  width: 32%;
+  margin-right: 1.3%;
+  margin-bottom: 30px;
+  vertical-align: middle;
+  transition: .2s all;
+}
+
+.card:hover {
+  transform:scale(1.03);  
+}
+
+#grafica {
+    position: relative;
+    width: 600px;
+    height: 200px;
+
+    display:block;
+    margin:auto;
+}
+
+
+/*Scroll bar*/
+body::-webkit-scrollbar {
+  width: 9px;     /* Tamaño del scroll en vertical */
+  height: 9px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del
+thumb */
+body::-webkit-scrollbar-thumb {
+  background: #e7ac70;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #a87038;
+  box-shadow: 0 0 2px 1px rgba(128, 128, 128, 0.2);
+}
+/*Scroll bar/*/
