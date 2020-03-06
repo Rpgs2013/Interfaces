@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examen 2a Eval Subir Nota</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <header id="header">
+        <div>
+            <a href="#" id="menu_on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <img src="media/strava.png" alt="logo" height="48px" width="48px" class="logo">
+        <div id="div-boton">
+            <em><a id="boton" href="#" onmouseover="javascript:mostrarAyuda()" onblur onfocus onmouseout="javascript:ocultarAyuda()">HELP<img src="media/interrogation.svg" alt="helper"></a></em>
+        </div>
+        <div id="ayuda" class="popup">
+            <em><br><br>
+                La realización de este proyecto ha sido llevada a cabo con gran precicisión, y por ello estamos muy orgullosos de ello
+            </em>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li> <button class="uk-button uk-button-secondary uk-width-1-1" type="button" uk-toggle="target: #offcanvas-flip">HELP</button>
+                    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button><br><br>
+                            <h3>APARTADO DE AYUDA</h3>
+                            <p>Los deportistas han conseguido una mejora de casi el 200% con nosostros. Si sois deportistas, y quereís mejorar es el mejor momento. <br>JUST DO IT</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="content">
+            <h1><span id="why">WHY</span> WE RUN</h1><br>
+            <h2>For something bigger.</h2><br><br>
+        </section>
+        <div id="particles-js">
+        </div>
+    </main>
+    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top">
+        <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+            <p uk-parallax="opacity: 0,1; y: 200,0; scale: 5,1; viewport: 0.5;">JUST DO IT</p>
+            <br><br><br>
+        </div>
+    </div>
+
+    <div id="app"></div>
+
+    <div id="grafica">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script type="text/javascript" src="grafica.js"></script>
+    <script type="text/javascript" src="p5.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+</body>
+</html>
